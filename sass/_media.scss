@@ -1,0 +1,392 @@
+.iti__flag {
+  background-image: url("path/to/flags.png");
+}
+
+.iti {
+  margin-bottom: 30px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("path/to/flags@2x.png");
+    
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .about {
+    h1 {
+      font-size: 62px;
+    }
+  
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .about {
+    h1 {
+      top: 105px;
+      // letter-spacing: -0.04em;
+    }
+  
+  }
+
+}
+
+@media screen and (max-width: 1168px) {
+  .header {
+    .header__hamburger {
+      display: block;
+    }
+
+    .header__navigation {
+      // display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      transition: transform 0.5s ease-in;
+      z-index: 5;
+      transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        
+
+      .navigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #2D303A;
+        width: 72vw;
+        height: 100vh;
+        box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.4);
+        // transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+        color: #ffffff;
+        
+  
+        .navigation__item {
+          margin: 0 0 30px 30px;
+          .navigation__link {
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: -0.035rem;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+    .navigation-active {
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+  }
+
+    .logo {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  .about {
+    h1 {
+      top: 65px;
+      letter-spacing: -0.004em;
+      // font-size: 48px;
+    }
+  
+  }
+
+  .about__button {
+    margin-top: 55px;
+  }
+
+  .footer {
+    .footer-wrap {
+      grid-template-columns: 1fr 1fr 39%;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .about h1 {
+    top: 40px;
+    letter-spacing: -0.004em;
+  }
+
+  .about__button {
+    margin: 5% 0 2.5%;
+  }
+
+}
+
+@media screen and (max-width: 880px) {
+  .about {
+    .about-wrap {
+      grid-template-columns: 1fr;
+      padding-right: 30px;
+      padding: 30px;
+      h1 {
+        position: static;
+        font-size: 42px;
+        span {
+          color: #000000;
+        }
+      }
+
+        .about__descr {
+            padding: 0;
+            .about__text {
+                font-size: initial;
+            }
+        
+            .about__text:first-child {
+                margin-top: 10px;
+            }
+        }
+
+      .about__image {
+        display: none;
+      }
+    }
+  }
+
+  .reviews {
+    .reviews__wrap {
+        // flex-direction: column;
+        .review {
+            margin-top: 30px;
+            .review__image {
+                max-width: 80%;
+            }
+        }
+    }
+    
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .about h1 {
+    top: 95px;
+    letter-spacing: -0.025em;
+  }
+
+  .vebinars {
+      padding-bottom: 60px;
+    .vebinars__subtitle {
+      padding: 10px 0 0;
+    }
+    .sets__wrap {
+      grid-template-columns: 1fr;
+      .set {
+        margin-top: 30px;
+        .set__title {
+          margin-bottom: 10px;
+        }
+        .set__image {
+          display: block;
+          max-width: 70%;
+          margin: 0 auto;
+        }
+
+        .button {
+          margin-top: 15px;
+        }
+      }
+    }
+  
+  }
+
+  .speakers {
+    .swiper-container {
+        padding-top: 30px;
+        .swiper-slide {
+            padding: 0 15px;
+            .img {
+            height: 250px;
+            }
+            .slide__text {
+            margin-top: 30px;
+            // padding: 0 40px;
+            }
+        }
+
+        .swiper-button-next {
+            right: 25px;
+        }
+
+        .swiper-button-prev {
+            left: 25px;
+        }
+    }
+  }
+
+  .partners {
+    .partners__wrap {
+        margin: 30px auto;
+        grid-row-gap: 30px;
+        .partners__item-wrap {
+            max-width: 320px;
+            .partners__item {
+                filter: none;
+                -webkit-filter: none;
+            }
+        }
+    }
+  }
+
+  .footer {
+    .footer-wrap {
+      grid-template-columns: 1fr 1fr;
+      .about__button {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+    .about {
+        .about-wrap {
+            h1 {
+                text-align: center;
+                font-size: 26px;
+                line-height: 32px;
+            }
+        }
+    }
+  
+
+    .button__wrap {
+    display: none;
+    }
+
+    .title {
+    font-size: 14px;
+    }
+
+    .vebinars {
+        .sets__wrap {
+            .set {
+                .set__image {
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+
+    .speakers {
+        .swiper-container {
+            .swiper-button-next {
+                right: 10px;
+            }
+    
+            .swiper-button-prev {
+                left: 10px;
+            }
+        }
+      }
+
+      .partners {
+        .partners__wrap {
+          grid-template-columns: (repeat(auto-fit, 300px));
+        }
+      }
+
+   
+
+    .contacts {
+        .networks, .massagers {
+            margin-top: 30px;
+        }
+
+        .networks__wrap {
+            grid-column-gap: 30px;
+        }
+
+        .contacts__wrap {
+            padding: 60px 30px;
+            flex-direction: column-reverse;
+            .contacts__email {
+                margin-top: 30px;
+            }
+
+            .about__button {
+                padding: 16px 35px;
+            }
+        }
+    }
+
+    .reviews {
+      .reviews__wrap {
+          flex-direction: column;
+          .review {
+              margin-top: 30px;
+              .review__image {
+                  max-width: 70%;
+              }
+          }
+      }
+    }
+
+    .footer {
+      .footer-wrap {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        .footer__text {
+          text-align: center;
+        }
+        .footer__links {
+          display: none;
+        }
+      }
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .vebinars {
+        .sets__wrap {
+            .set {
+                .set__image {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .partners {
+      .partners__wrap {
+        grid-template-columns: (repeat(auto-fit, 250px));
+      }
+    }
+
+    .contacts {
+
+      .networks__wrap {
+          grid-column-gap: 25px;
+      }
+
+      .massagers__wrap {
+        grid-column-gap: 50px;
+      }
+
+    }
+
+}
+
+
+
+
+
+
